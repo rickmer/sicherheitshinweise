@@ -1,0 +1,5 @@
+projects/mainpage/output/*
+lib
+include
+bin
+*.pyc
