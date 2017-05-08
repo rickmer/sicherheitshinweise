@@ -3,10 +3,12 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'raa'
-SITENAME = 'continental security podcast'
+SITENAME = 'Sicherheitshinweise - PodCast zur EDV-Sicherheit'
 SITEURL = ''
 
 PATH = 'content'
+PLUGIN_PATHS = ['../../plugins']
+PLUGINS = ['pelican-podcast-feed',]
 
 TIMEZONE = 'Europe/Paris'
 
@@ -20,14 +22,12 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (('raise an issue', '#'),
+         ('pad', 'https://sicherheitshinweise.pads.ccc.de/'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('plushkatze', 'https://github.com/plushkatze'),
+          ('raa', 'https://github.com/rickmer'),)
 
 DEFAULT_PAGINATION = 3
 
@@ -35,3 +35,17 @@ DEFAULT_PAGINATION = 3
 #RELATIVE_URLS = True
 
 THEME = 'pelican-simplegrey'
+
+PODCAST_FEED_PATH = 'podcast.xml'
+PODCAST_FEED_LANGUAGE = 'de'
+PODCAST_FEED_COPYRIGHT = 'http://creativecommons.org/licenses/by-sa/4.0/'
+PODCAST_FEED_EXPLICIT = 'Yes'
+PODCAST_FEED_TITLE = 'Sicherheitshinweise'
+PODCAST_FEED_SUBTITLE = 'PodCast zur EDV Sicherheit'
+PODCAST_FEED_AUTHOR = 'plushkatze, raa'
+PODCAST_FEED_SUMMARY = ''
+PODCAST_FEED_IMAGE= 'http://imga.ge/file.jpg'
+PODCAST_FEED_OWNER_NAME = ''
+PODCAST_FEED_OWNER_EMAIL = ''
+PODCAST_FEED_CATEGORY = ['category1','cat2']
+
