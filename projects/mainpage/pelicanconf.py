@@ -2,13 +2,17 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+DEFAULT_DATE_FORMAT = '%d/%m/%Y'
+
 AUTHOR = 'raa'
 SITENAME = 'Sicherheitshinweise - PodCast zur EDV-Sicherheit'
-SITEURL = ''
+SITEURL = '' # 'https://sicherheitshinweise.github.io'
 
 PATH = 'content'
+DELETE_OUTPUT_DIRECTORY = True
 PLUGIN_PATHS = ['../../plugins']
 PLUGINS = ['pelican-podcast-feed',]
+STATIC_PATHS = ['img']
 
 TIMEZONE = 'Europe/Paris'
 
@@ -21,8 +25,11 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+# Menu
+MENUITEMS = [('home', '/' + SITEURL),]
+
 # Blogroll
-LINKS = (('raise an issue', '#'),
+LINKS = (('abonieren', 'podcast.xml'),
          ('pad', 'https://sicherheitshinweise.pads.ccc.de/'),)
 
 # Social widget
@@ -34,7 +41,7 @@ DEFAULT_PAGINATION = 3
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-THEME = 'pelican-simplegrey'
+THEME = 'basic'
 
 PODCAST_FEED_PATH = 'podcast.xml'
 PODCAST_FEED_LANGUAGE = 'de'
@@ -44,7 +51,7 @@ PODCAST_FEED_TITLE = 'Sicherheitshinweise'
 PODCAST_FEED_SUBTITLE = 'PodCast zur EDV Sicherheit'
 PODCAST_FEED_AUTHOR = 'plushkatze, raa'
 PODCAST_FEED_SUMMARY = ''
-PODCAST_FEED_IMAGE= 'http://imga.ge/file.jpg'
+PODCAST_FEED_IMAGE = SITEURL + '/img/logo.png'
 PODCAST_FEED_OWNER_NAME = ''
 PODCAST_FEED_OWNER_EMAIL = ''
 PODCAST_FEED_CATEGORY = ['category1','cat2']
