@@ -39,8 +39,10 @@
   </footer><!-- /.post-info -->
   <div class="entry-content">
     {{ article.content }}
-    {% if article.podcast %}
+    {% if article.podcast[0:4] == 'http' %}
 	<audio preload="none" controls="enabled"><source type="audio/mp3" src="{{ article.podcast }}"></audio>
+    {% elif article.podcast %}
+        <audio preload="none" controls="enabled"><source type="audio/mp3" src="{{ SITEURL }}/{{ article.podcast }}"></audio>
     {% endif %}
   </div><!-- /.entry-content -->
 </section>
