@@ -38,3 +38,6 @@ pre {
     white-space: pre-wrap;
 }
 
+#player {
+    width: 100%
+}
