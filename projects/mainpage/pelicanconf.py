@@ -2,17 +2,17 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-DEFAULT_DATE_FORMAT = '%d/%m/%Y'
+DEFAULT_DATE_FORMAT = '%d.%m.%Y'
 
 AUTHOR = 'raa'
 SITENAME = 'Sicherheitshinweise - PodCast zur EDV-Sicherheit'
-SITEURL = '' # 'https://sicherheitshinweise.github.io'
+SITEURL = 'http://127.0.0.1:8000' # 'https://sicherheitshinweise.github.io'
 
 PATH = 'content'
 DELETE_OUTPUT_DIRECTORY = True
 PLUGIN_PATHS = ['../../plugins']
 PLUGINS = ['pelican-podcast-feed',]
-STATIC_PATHS = ['img']
+STATIC_PATHS = ['img', 'media']
 
 TIMEZONE = 'Europe/Paris'
 
@@ -26,7 +26,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Menu
-MENUITEMS = [('home', '/' + SITEURL),]
+MENUITEMS = [('home', SITEURL + '/'),('feed', SITEURL + '/podcast.xml')]
 
 # Blogroll
 LINKS = (('abonieren', 'podcast.xml'),

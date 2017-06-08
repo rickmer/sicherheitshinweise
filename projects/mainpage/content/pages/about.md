@@ -1,4 +1,4 @@
-Title: About
+Title: about
 Date: 2010-12-03 10:20
 
 Sicherheitshinweise ist ein Podcast zur IT-Sicherheit.
