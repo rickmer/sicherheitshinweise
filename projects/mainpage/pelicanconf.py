@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-DEFAULT_DATE_FORMAT = '%d/%m/%Y'
+DEFAULT_DATE_FORMAT = '%d.%m.%Y'
 
 AUTHOR = 'raa'
 SITENAME = 'Sicherheitshinweise - PodCast zur EDV-Sicherheit'
@@ -12,7 +12,7 @@ PATH = 'content'
 DELETE_OUTPUT_DIRECTORY = True
 PLUGIN_PATHS = ['../../plugins']
 PLUGINS = ['pelican-podcast-feed',]
-STATIC_PATHS = ['img','media']
+STATIC_PATHS = ['img', 'media']
 
 TIMEZONE = 'Europe/Paris'
 
