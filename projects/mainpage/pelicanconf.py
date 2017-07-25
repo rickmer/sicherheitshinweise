@@ -6,13 +6,13 @@ DEFAULT_DATE_FORMAT = '%d/%m/%Y'
 
 AUTHOR = 'raa'
 SITENAME = 'Sicherheitshinweise - PodCast zur EDV-Sicherheit'
-SITEURL = '' # 'https://sicherheitshinweise.github.io'
+SITEURL = 'https://shw.rickmer.org'
 
 PATH = 'content'
 DELETE_OUTPUT_DIRECTORY = True
 PLUGIN_PATHS = ['../../plugins']
 PLUGINS = ['pelican-podcast-feed',]
-STATIC_PATHS = ['img']
+STATIC_PATHS = ['img','media']
 
 TIMEZONE = 'Europe/Paris'
 
@@ -26,7 +26,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Menu
-MENUITEMS = [('home', '/' + SITEURL),]
+MENUITEMS = [('home', SITEURL + '/'),('feed', SITEURL + '/podcast.xml')]
 
 # Blogroll
 LINKS = (('abonieren', 'podcast.xml'),
@@ -51,7 +51,7 @@ PODCAST_FEED_TITLE = 'Sicherheitshinweise'
 PODCAST_FEED_SUBTITLE = 'PodCast zur EDV Sicherheit'
 PODCAST_FEED_AUTHOR = 'plushkatze, raa'
 PODCAST_FEED_SUMMARY = ''
-PODCAST_FEED_IMAGE = SITEURL + '/img/logo.png'
+PODCAST_FEED_IMAGE = SITEURL + '/img/logo.jpg'
 PODCAST_FEED_OWNER_NAME = ''
 PODCAST_FEED_OWNER_EMAIL = ''
 PODCAST_FEED_CATEGORY = ['category1','cat2']
