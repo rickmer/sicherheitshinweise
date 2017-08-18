@@ -49,10 +49,10 @@ PODCAST_FEED_COPYRIGHT = 'http://creativecommons.org/licenses/by-sa/4.0/'
 PODCAST_FEED_EXPLICIT = 'Yes'
 PODCAST_FEED_TITLE = 'Sicherheitshinweise'
 PODCAST_FEED_SUBTITLE = 'PodCast zur EDV Sicherheit'
-PODCAST_FEED_AUTHOR = 'plushkatze, raa'
-PODCAST_FEED_SUMMARY = ''
-PODCAST_FEED_IMAGE = SITEURL + '/img/logo.jpg'
+PODCAST_FEED_AUTHOR = 'plushkatze & raa'
+PODCAST_FEED_SUMMARY = 'PodCast zur EDV Sicherheit'
+PODCAST_FEED_IMAGE = SITEURL + '/img/logo_hires.jpg'
 PODCAST_FEED_OWNER_NAME = ''
 PODCAST_FEED_OWNER_EMAIL = ''
-PODCAST_FEED_CATEGORY = ['category1','cat2']
+PODCAST_FEED_CATEGORY = ['Technology','Software How-To']
 
