@@ -40,9 +40,9 @@
   <div class="entry-content">
     {{ article.content }}
     {% if article.podcast[0:4] == 'http' %}
-	<audio id="player" preload="none" controls="enabled"><source type="audio/mp3" src="{{ article.podcast }}"></audio>
+	<p><audio id="player" preload="none" controls="enabled"><source type="audio/mp3" src="{{ article.podcast }}"></audio></p>
     {% elif article.podcast %}
-        <audio id="player" preload="none" controls="enabled"><source type="audio/mp3" src="{{ SITEURL }}/{{ article.podcast }}"></audio>
+        <p><audio id="player" preload="none" controls="enabled"><source type="audio/mp3" src="{{ SITEURL }}/{{ article.podcast }}"></audio></p>
     {% endif %}
   </div><!-- /.entry-content -->
 </section>

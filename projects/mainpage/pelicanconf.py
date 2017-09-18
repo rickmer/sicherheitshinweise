@@ -41,11 +41,12 @@ DEFAULT_PAGINATION = 3
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-THEME = 'basic'
+
+THEME = '../../themes/basic'
 
 PODCAST_FEED_PATH = 'podcast.xml'
 PODCAST_FEED_LANGUAGE = 'de'
-PODCAST_FEED_COPYRIGHT = 'http://creativecommons.org/licenses/by-sa/4.0/'
+PODCAST_FEED_COPYRIGHT = 'http://creativecommons.org/licenses/nc-by-sa/4.0/'
 PODCAST_FEED_EXPLICIT = 'Yes'
 PODCAST_FEED_TITLE = 'Sicherheitshinweise'
 PODCAST_FEED_SUBTITLE = 'PodCast zur EDV Sicherheit'
