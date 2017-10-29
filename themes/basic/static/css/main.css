@@ -26,6 +26,7 @@ h6 a { color: inherit !important }
 
 #menu li {
     display: inline;
+    text-transform: lowercase;
 }
 
 #post-list {

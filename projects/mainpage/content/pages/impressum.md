@@ -1,4 +1,4 @@
-Title: impressum
+Title: Impressum
 Date: 2017-09-18 23:42
 
 > Rickmer Frier
@@ -15,7 +15,7 @@ Date: 2017-09-18 23:42
 
 > Titelmusik von [Artist Music](https://soundcloud.com/artistmusic-cc0/epic-agent-free) steht unter CC0.
 
-> Titelbild von [JuralMin](https://pixabay.com/en/ninja-data-security-pc-computer-1507457) steht unter CC0. 
+> Titelbild von [wasp](mailto:wasp23dotcom@gmail.com). 
 
 > Der Podcast wird bereitgestellt unter Creative Commons NC BY SA 4.0
 
